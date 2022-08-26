@@ -1,0 +1,11 @@
+.search-text {
+  color: black;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.thumb__title:hover {
+  color: red;
+}

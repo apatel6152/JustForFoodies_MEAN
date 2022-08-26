@@ -1,0 +1,29 @@
+<!-- <p>menu-detail works!</p> -->
+<h1 class="listheader">Menu Details</h1>
+<div class="list">
+
+
+  <div class="movieImg" [ngStyle]="{ 'background-image': 'url( ' + menu.image + ')'}"></div>
+
+  <div class="movieDetails">
+    <div class="hover-btn">
+      <a routerLink="/delete/{{ menu._id }}">
+        <button type="button" class="glyphicon glyphicon-trash close"></button>
+      </a>
+
+      <a routerLink="/edit/{{ menu._id }}">
+        <button type="button" class="glyphicon glyphicon-pencil close edit"></button>
+      </a>
+    </div>
+    <h3 class="movielist">{{ menu.name }} </h3>
+    <p class="movielist">Price: ${{ menu.price }} </p>
+    <p class="movielist">Type: {{ menu.type }}</p>
+    <p class="movielist">Description: </p>
+    <p class="description">{{ menu.description }} </p>
+    <p class="rating">
+      <span *ngFor="let item of [].constructor(menu.rating)" class="glyphicon glyphicon-star"></span>
+      <span *ngFor="let item of [].constructor(5 - menu.rating)" class="glyphicon glyphicon-star-empty"></span>
+    </p>
+  </div>
+</div>
+

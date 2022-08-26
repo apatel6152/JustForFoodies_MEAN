@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap");
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Nunito", sans-serif;
+}
+
+#home {
+  /* background-image: url("../../assets/images/heroimg.jpg"); */
+  /* background: no-repeat;  */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  width: 100vw;
+  padding-left: 0px;
+  margin-left: 0px;
+}
+
+.home__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column-reverse;
+  gap: 5rem;
+}
+
+.home__imgWrapper {
+  max-width: 400px;
+  width: 80%;
+  margin: 0 auto;
+  /* here */
+  /* float: right; */
+}
+.home__heading {
+  line-height: 1.4em;
+  text-align: center;
+  font-size: 4.8rem;
+  margin-bottom: 1.5rem;
+  color: red;
+  text-transform: capitalize;
+}
+.home__info {
+  text-align: center;
+  font-size: 1.72rem;
+  margin-bottom: 1.5rem;
+  color: black;
+}
+.button__wrapper {
+  text-align: center;
+  /* padding: 10px; */
+  display: flex;
+  flex: 1fr 1fr;
+  gap: 10px;
+}
+
+.btn {
+  /* padding: 10px; */
+  margin-top: 1rem;
+  display: inline-block;
+  font-size: 1.7rem;
+  color: #fff;
+  background: black;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  padding: 0.8rem 3rem;
+  /* margin: 20px; */
+}
+
+.btn:hover {
+  background: red;
+  letter-spacing: 0.1rem;
+}
+
+.container {
+  display: flex;
+  flex: 1fr;
+}
+
+.home__right {
+  position: relative;
+  /* bottom: 10px; */
+  left: 350px;
+  /* top: 100px; */
+  top: 120px;
+}
+
+.home__left__wrapper {
+  max-width: 350px;
+  /*  */
+  /* float: left; */
+  position: relative;
+  /* bottom: 250px; */
+  bottom: 300px;
+  right: 200px;
+  padding: 20px;
+  /* height: 150px; */
+}
+img {
+  border-radius: 10px;
+}
+/* dishes */
+
+#top_dishes {
+  /* margin-top: 25px; */
+  text-align: center;
+  color: red;
+}
+
+h2 {
+  /* font-family: "Nunito", sans-serif; */
+  font-weight: 700;
+  margin: 50px;
+  font-size: 4rem;
+  /* margin-top: -100px; */
+}
+
+.dish_item_title {
+  color: black;
+}
+
+#top_dishes img.star {
+  height: 50%;
+  width: 20%;
+}
+
+.dish_wrapper {
+  display: flex;
+  flex: 1fr 1fr 1fr;
+}
+/* newsletter */
+.newsletter__wrapper {
+  margin-top: 110px;
+  display: flex;
+  /* flex: 1fr 1fr; */
+  /* flex-direction: column; */
+  flex-direction: row;
+  background-color: rgba(243, 3, 3, 0.548);
+  padding: 1.5rem;
+  border-radius: 8px;
+  gap: 18.2rem;
+}
+.newsletter__title {
+  font-size: 1.8rem;
+  color: black;
+  font-weight: 600;
+  margin-bottom: 1.3rem;
+}
+.newsletter__text {
+  font-size: 1.4rem;
+  color: black;
+  font-weight: 500;
+}
+.newsletter__form form {
+  position: relative;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  top: 15px;
+}
+.newsletter__form label {
+  width: 100%;
+}
+.newsletter__form input {
+  width: 100%;
+  font-size: 1.4rem;
+  padding: 1.5rem 15rem;
+  border: none;
+}
+.newsletter__form input::placeholder {
+  color: rgb(168, 166, 166);
+}
+.newsletter__form button[type="submit"] {
+  background-color: rgba(255, 0, 0, 0.904);
+  color: white;
+  border: none;
+  font-size: 1.4rem;
+  padding: 0 2rem;
+  height: 100%;
+  /* width: 100%; */
+  position: absolute;
+  right: 0;
+  top: 0;
+}

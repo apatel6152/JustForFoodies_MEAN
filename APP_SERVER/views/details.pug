@@ -1,0 +1,31 @@
+extends layout
+include _includes/sharedHTMLfunctions
+
+block content
+  h1.listheader= title
+  .list
+        .movieImg(style='background-image:url(#{menus.image});')
+        .movieDetails
+            p.rating
+                +outputRating(menus.rating) 
+            h3.movielist #{menus.name} 
+            p.movielist Price: #{menus.price}  
+            p.movielist Type: #{menus.type}
+            //- p.movielist Director: #{menus.director}
+            //- p.movielist Duration: #{menus.duration} min
+            //- p.movielist releaseDate: #{menus.releaseDate}
+            p.movielist Description: 
+            p.description #{menus.description}
+
+  a(href=`/edit/${menus._id}`)
+    p.EditMovieButton Edit
+
+  a(href=`/delete/${menus._id}`)
+    p.deleteMovieButton Delete
+
+  
+            
+            
+
+
+  

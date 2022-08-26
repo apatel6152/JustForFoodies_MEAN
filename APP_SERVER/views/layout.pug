@@ -1,0 +1,43 @@
+doctype html
+html
+  head
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    //- title= title
+    link(rel='stylesheet', href='/bootstrap/css/amelia.bootstrap.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/build/styles.css')
+  body
+    block content
+    block scripts
+      script(src='/build/main.js')
+      script(src='/build/polyfills.js')
+      script(src='/build/runtime.js')
+      script(src='/build/vendor.js')
+  //-   .navbar.navbar-default.navbar-fixed-top
+  //-     .container
+  //-       .navbar-header
+  //-         a.navbar-brand(href='/') Restaurant APP
+  //-         button.navbar-toggle(type='button', data-toggle='collapse', data-target='#navbar-main')
+  //-           span.icon-bar
+  //-           span.icon-bar
+  //-           span.icon-bar
+  //-       #navbar-main.navbar-collapse.collapse
+  //-         ul.nav.navbar-nav
+  //-           li
+  //-             a(href='/about/') About
+
+  //-           li
+  //-             a(href='/menu/') Menu List
+
+  //-           li
+  //-             a(href='/new/') Create New Menu
+            
+  //-   .container
+  //-     block content
+
+  //- .footer
+  //-   .container.text-center
+  //-     small &copy; Restaurant APP
+
+  //-   script(src='/javascripts/jquery-1.11.1.min.js')
+  //-   script(src='/bootstrap/js/bootstrap.min.js')

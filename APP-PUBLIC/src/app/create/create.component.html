@@ -1,0 +1,105 @@
+<div class="row">
+  <h1 class="listheader">Create New Menu Item</h1>
+</div>
+<div class="row">
+  <div class="col-xs-12 col-md-9">
+    <form
+      class="form-horizontal"
+      action=" "
+      method="POST"
+      role="form"
+      (ngSubmit)="createNewMenu(newMenu)"
+    >
+      <div class="form-group">
+        <label class="col-xs-10 col-sm-4 control-label lable" for="name"
+          >Menu Name</label
+        >
+        <div class="col-xs-12 col-sm-8">
+          <input
+            class="form-control"
+            [(ngModel)]="newMenu.name"
+            id="name"
+            name="name"
+          />
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-xs-10 col-sm-4 control-label lable" for="price"
+          >Price</label
+        >
+        <div class="col-xs-12 col-sm-8">
+          <input
+            class="form-control"
+            [(ngModel)]="newMenu.price"
+            min="1"
+            id="price"
+            name="price"
+          />
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-xs-10 col-sm-4 control-label lable" for="cast"
+          >Type</label
+        >
+        <div class="col-xs-12 col-sm-8">
+          <input
+            class="form-control"
+            [(ngModel)]="newMenu.type"
+            id="type"
+            name="type"
+          />
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="col-xs-10 col-sm-4 control-label lable" for="description"
+          >Description</label
+        >
+        <div class="col-xs-12 col-sm-8">
+          <input
+            class="form-control"
+            [(ngModel)]="newMenu.description"
+            id="description"
+            name="description"
+          />
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-xs-10 col-sm-4 control-label lable" for="rating"
+          >Rating</label
+        >
+        <div class="col-xs-12 col-sm-8">
+          <select
+            class="form-control"
+            [(ngModel)]="newMenu.rating"
+            id="rating"
+            name="rating"
+          >
+            <option value="5">5</option>
+            <option value="4">4</option>
+            <option value="3">3</option>
+            <option value="2">2</option>
+            <option value="1">1</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-xs-10 col-sm-4 control-label lable" for="image"
+          >Image URL</label
+        >
+        <div class="col-xs-12 col-sm-8">
+          <input
+            class="form-control"
+            [(ngModel)]="newMenu.image"
+            id="image"
+            name="image"
+          />
+        </div>
+      </div>
+      <button class="btn btn-default pull-right button" type="submit">
+        Create
+      </button>
+    </form>
+  </div>
+  <div class="col-xs-12 col-md-3"></div>
+</div>
